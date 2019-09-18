@@ -3,6 +3,6 @@ We also learn about mean median and mode and how even in string form you can use
 We also see the different types of methods you can use to change lists.
 Lastly, we learn about frequency distribution.
 
-4. mean:
+4. mean: 54.0
 median:
 mode: 
