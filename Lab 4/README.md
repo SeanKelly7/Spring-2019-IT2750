@@ -5,4 +5,4 @@ Lastly, we learn about frequency distribution.
 
 4. mean: 54.0
 median: 53
-mode: 
+mode: [43]
