@@ -4,5 +4,5 @@ We also see the different types of methods you can use to change lists.
 Lastly, we learn about frequency distribution.
 
 4. mean: 54.0
-median:
+median: 53
 mode: 
