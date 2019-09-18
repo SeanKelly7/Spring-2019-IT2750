@@ -1,5 +1,6 @@
 1.>>>string = "The quick brown fox jumps over the lazy dog"
 >>>list(string)
+>>>string = list(string)
 >>>string = [x.lower() for x in string]
 
 2. >>>string.sort()
@@ -24,3 +25,16 @@
 >>> mode(string)
 
 4.
+>>> def frequency(stringlist):
+...     countdict = {}
+...     for item in stringlist:
+...         if item in countdict:
+...             countdict[item] = countdict[item] +1
+...         else:
+...             countdict[item] = 1
+...     itemlist = list(countdict.keys())
+...     itemlist.sort()
+...     for item in itemlist:
+...         print(item)
+...
+>>> frequency(string)
