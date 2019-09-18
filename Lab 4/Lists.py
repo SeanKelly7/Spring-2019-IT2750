@@ -25,7 +25,7 @@
 >>> mode(string)
 
 4.
->>> def frequency(stringlist):
+>>> def uniqueleters(stringlist):
 ...     countdict = {}
 ...     for item in stringlist:
 ...         if item in countdict:
@@ -37,4 +37,4 @@
 ...     for item in itemlist:
 ...         print(item)
 ...
->>> frequency(string)
+>>> uniqueletters(string)
