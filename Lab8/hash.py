@@ -43,17 +43,21 @@ while True:
         flag = -1
         print("Password must contain at least one number.")
         break
-    elif not re.search("[_@$]", password): 
+    elif not re.search("[!_@$*#%^&-+=]", password): 
         flag = -1
         print("Password must contain at least one symbol")
         break
     else: 
         flag = 0
         print("Valid Password")
-        newPassword = password
-        db_pass = newPassword
-        h = hashlib.md5(db_pass.encode())
-        print(h.hexdigest())
+        hash1 = hashlib.md5(password.encode()).hexdigest()
+        print(hash1)
+        chkPass = input("Please re-enter the password to check it: ")
+        password == hashlib.md5(chkPass.encode()).hexdigest()
+        if (password == chkPass):
+            print("Passwords are the same.")
+        else:
+            print("Passwords don't match.")
         break
   
 if flag ==-1: 
